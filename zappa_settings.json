@@ -1,0 +1,7 @@
+{
+    "dev": {
+        "s3_bucket": "zappa-henshin",
+        "app_function": "app.app"
+    }
+}
+
