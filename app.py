@@ -27,11 +27,49 @@ def index():
     entry_id = '7AmisHpntSSYOkuOcueecw'
     intro_string = client.entry(entry_id).intro_string
 
-    for show in shows:
-        print(show.henshin[0].url())
     return render_template('index.html',
                            shows=shows,
                            intro_string=intro_string)
+
+
+@app.route('/kamenrider')
+def kamenrider():
+    """Same as basic index, but only returns Kamen Rider"""
+    filtered_shows = []
+    shows = client.entries(
+        {'content_type': 'show', 'order': 'fields.first_episode_date'})
+
+    entry_id = '7AmisHpntSSYOkuOcueecw'
+    intro_string = client.entry(entry_id).intro_string
+
+    for show in shows:
+        if show.type == ["Kamen Rider"]:
+            filtered_shows.append(show)
+
+    return render_template('index.html',
+                           shows=filtered_shows,
+                           intro_string=intro_string,
+                           title="- Kamen Rider")
+
+
+@app.route('/supersentai')
+def supersentai():
+    """Same as basic index, but only returns Super Sentai"""
+    filtered_shows = []
+    shows = client.entries(
+        {'content_type': 'show', 'order': 'fields.first_episode_date'})
+
+    entry_id = '7AmisHpntSSYOkuOcueecw'
+    intro_string = client.entry(entry_id).intro_string
+
+    for show in shows:
+        if show.type == ["Super Sentai"]:
+            filtered_shows.append(show)
+
+    return render_template('index.html',
+                           shows=filtered_shows,
+                           intro_string=intro_string,
+                           title="- Kamen Rider")
 
 
 # We only need this for local development.
