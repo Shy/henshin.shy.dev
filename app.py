@@ -7,13 +7,14 @@ client = contentful.Client(
     '8c7dbd270cb98e83f9d8d57fb8a2ab7bac9d7501905fb013c69995ebf1b2a719')
 
 app = Flask(__name__)
+Markdown(app)
 
 
 def format_datetime(value):
-    """Format date time object from jinja"""
+    """Format date time object using jinja filters"""
     return (value.strftime('%B %-d, %Y'))
 
-Markdown(app)
+
 app.jinja_env.filters['datetime'] = format_datetime
 
 
