@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block title %}Home Page{% endblock %}
+{% block title %}Henshin!{% endblock %}
 {% block head %}
 {% endblock %}
 {% block content %}
@@ -7,30 +7,31 @@
      <div class="hero-body">
         <div class="container">
            <h1 class="title">
-              Hero title
+              Henshin!
            </h1>
-           <h2 class="subtitle">
-              Hero subtitle
+              {{intro_string | markdown}}
            </h2>
         </div>
      </div>
   </section>
   <section class="section">
      <div class="container">
+        {% for show in shows %}
         <div class="columns">
-           <div class="column">
-              First column
-           </div>
-           <div class="column">
-              Second column
-           </div>
-           <div class="column">
-              Third column
-           </div>
-           <div class="column">
-              Fourth column
+           <div class="column is-half is-offset-one-quarter">
+              <h4 class="title is-4">
+                {{ show.title }}
+              </h4>
+              <h6 class="subtitle is-6">
+                <strong>Original release:</strong> {{ show.first_episode_date | datetime }}  - {{ show.last_episode_date | datetime}}
+              </h6>
+              <video controls>
+                <source src="http:{{ show.henshin[0].url() }}" type="video/webm" alt="{{show.title}}">
+                Your browser does not support video.
+              </video>
            </div>
         </div>
+        {% endfor %}
      </div>
   </section>
 {% endblock %}
