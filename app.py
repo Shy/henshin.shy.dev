@@ -20,6 +20,7 @@ app.jinja_env.filters['datetime'] = format_datetime
 
 
 @app.route('/')
+@app.route('/home')
 def index():
     """index route. Gathers information from contentful and renders page"""
     shows = client.entries(
@@ -30,7 +31,8 @@ def index():
 
     return render_template('index.html',
                            shows=shows,
-                           intro_string=intro_string)
+                           intro_string=intro_string,
+                           title="Henshin!")
 
 
 @app.route('/show/<string:entry_id>')
@@ -49,7 +51,7 @@ def kamenrider():
     shows = client.entries(
         {'content_type': 'show', 'order': 'fields.first_episode_date'})
 
-    entry_id = '7AmisHpntSSYOkuOcueecw'
+    entry_id = '5eyqYKNFYcokiMYCqeYEWM'
     intro_string = client.entry(entry_id).intro_string
 
     for show in shows:
@@ -59,7 +61,7 @@ def kamenrider():
     return render_template('index.html',
                            shows=filtered_shows,
                            intro_string=intro_string,
-                           title="- Kamen Rider")
+                           title="Kamen Rider")
 
 
 @app.route('/supersentai')
@@ -69,7 +71,7 @@ def supersentai():
     shows = client.entries(
         {'content_type': 'show', 'order': 'fields.first_episode_date'})
 
-    entry_id = '7AmisHpntSSYOkuOcueecw'
+    entry_id = 'WlrfS7yUw0GioqMK2geqO'
     intro_string = client.entry(entry_id).intro_string
 
     for show in shows:
@@ -79,7 +81,7 @@ def supersentai():
     return render_template('index.html',
                            shows=filtered_shows,
                            intro_string=intro_string,
-                           title="- Kamen Rider")
+                           title="Super Sentai")
 
 
 # We only need this for local development.

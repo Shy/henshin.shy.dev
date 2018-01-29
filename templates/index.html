@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block title %}Henshin! {{title}}{% endblock %}
+{% block title %}{{title}}{% endblock %}
 {% block head %}
 {% endblock %}
 {% block content %}
@@ -9,9 +9,9 @@
            <div class="columns">
               <div class="column is-three-fifths is-offset-one-fifth">
                  <h1 class="title has-text-centered">
-                    Henshin!
+                    {{title}}
                  </h1>
-                 <p>{{intro_string | markdown}}</p>
+                 <p class="summary">{{intro_string | markdown}}</p>
               </div>
            </div>
         </div>

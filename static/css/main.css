@@ -2,7 +2,7 @@ video {
     width:100%;
 }
 
-.summary p {
+p, .summary p {
     margin: 16px 0px 16px 0px;
 }
 
