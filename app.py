@@ -8,6 +8,7 @@ client = contentful.Client(
 
 app = Flask(__name__)
 Markdown(app)
+app.debug = True
 
 
 def format_datetime(value):
@@ -30,6 +31,15 @@ def index():
     return render_template('index.html',
                            shows=shows,
                            intro_string=intro_string)
+
+
+@app.route('/show/<string:entry_id>')
+def show(entry_id):
+    """Take Show ID and return additional information. """
+    show = client.entry(entry_id)
+    return render_template('show.html',
+                           show=show,
+                           title="- " + show.title)
 
 
 @app.route('/kamenrider')
@@ -74,4 +84,4 @@ def supersentai():
 
 # We only need this for local development.
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

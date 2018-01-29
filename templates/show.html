@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block title %}Henshin! {{title}}{% endblock %}
+{% block head %}
+{% endblock %}
+{% block content %}
+    <section class="hero">
+       <div class="hero-body">
+        <div class="container">
+           <div class="columns">
+              <div class="column is-three-fifths is-offset-one-fifth">
+                 <h1 class="title has-text-centered">
+                    {{show.title}}
+                 </h1>
+               </div>
+             </div>
+             <div class="columns">
+                {% for henshin in show.henshin %}
+                    <div class="column is-three-fifths is-offset-one-fifth">
+                        <video controls>
+                            <source src="http:{{ henshin.url() }}" type="video/webm" alt="{{show.title}}">
+                            Your browser does not support video.
+                        </video>
+                    </div>
+                {% endfor %}
+             </div>
+             <div class="columns">
+                <div class="column is-three-fifths is-offset-one-fifth summary">
+                    <p>{{show.summary | markdown}}</p>
+                </div>
+           </div>
+        </div>
+     </div>
+    </section>
+    <section class="hero">
+       <div class="container">
+          <div class="columns">
+             <div class="column is-three-fifths is-offset-one-fifth summary">
+                Information Sourced from: <a href="{{show.reference}}">Tv Tropes</a>
+             </div>
+          </div>
+       </div>
+    </section>
+
+
+{% endblock %}

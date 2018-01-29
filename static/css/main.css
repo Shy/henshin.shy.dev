@@ -1,0 +1,15 @@
+video {
+    width:100%;
+}
+
+.summary p {
+    margin: 16px 0px 16px 0px;
+}
+
+.summary ol{
+    margin-left: 16px;
+    padding-left: 16px;
+}
+.summary li {
+    margin: 16px 0px 16px 0px;
+}

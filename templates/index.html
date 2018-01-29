@@ -3,24 +3,25 @@
 {% block head %}
 {% endblock %}
 {% block content %}
-  <section class="hero has-text-centered">
+  <section class="hero">
      <div class="hero-body">
         <div class="container">
-           <h1 class="title">
-              Henshin!
-           </h1>
-              {{intro_string | markdown}}
-           </h2>
+           <div class="columns">
+              <div class="column is-three-fifths is-offset-one-fifth">
+                 <h1 class="title has-text-centered">
+                    Henshin!
+                 </h1>
+                 <p>{{intro_string | markdown}}</p>
+              </div>
+           </div>
         </div>
      </div>
-  </section>
-  <section class="section">
      <div class="container">
         {% for show in shows %}
         <div class="columns">
-           <div class="column is-half is-offset-one-quarter">
+           <div class="column is-three-fifths is-offset-one-fifth">
               <h4 class="title is-4">
-                {{ show.title }}
+                <a href="{{url_for('show',entry_id=show.id)}}">{{ show.title }}</a>
               </h4>
               <h6 class="subtitle is-6">
                 <strong>Original release:</strong> {{ show.first_episode_date | datetime }}  - {{ show.last_episode_date | datetime}}
