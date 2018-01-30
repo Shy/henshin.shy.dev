@@ -25,4 +25,16 @@ module.exports = function (migration) {
         .type('Link')
         .linkType('Asset')
         .required(true)
+
+    const show = migration.editContentType('show')
+    show
+        .createField('characters')
+        .name('characters')
+        .type('Array')
+        .items({type: 'Link',
+            linkType: 'Entry',
+            validations: [
+                { linkContentType: [ 'character' ] }
+            ]
+        })
 };
