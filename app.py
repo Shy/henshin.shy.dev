@@ -47,19 +47,16 @@ def show(entry_id):
 @app.route('/kamenrider')
 def kamenrider():
     """Same as basic index, but only returns Kamen Rider"""
-    filtered_shows = []
     shows = client.entries(
-        {'content_type': 'show', 'order': 'fields.first_episode_date'})
+        {'content_type': 'show',
+         'order': 'fields.first_episode_date',
+         'fields.type': 'Kamen Rider'})
 
     entry_id = '5eyqYKNFYcokiMYCqeYEWM'
     intro_string = client.entry(entry_id).intro_string
 
-    for show in shows:
-        if show.type == ["Kamen Rider"]:
-            filtered_shows.append(show)
-
     return render_template('index.html',
-                           shows=filtered_shows,
+                           shows=shows,
                            intro_string=intro_string,
                            title="Kamen Rider")
 
@@ -67,19 +64,16 @@ def kamenrider():
 @app.route('/supersentai')
 def supersentai():
     """Same as basic index, but only returns Super Sentai"""
-    filtered_shows = []
     shows = client.entries(
-        {'content_type': 'show', 'order': 'fields.first_episode_date'})
+        {'content_type': 'show',
+         'order': 'fields.first_episode_date',
+         'fields.type': 'Super Sentai'})
 
     entry_id = 'WlrfS7yUw0GioqMK2geqO'
     intro_string = client.entry(entry_id).intro_string
 
-    for show in shows:
-        if show.type == ["Super Sentai"]:
-            filtered_shows.append(show)
-
     return render_template('index.html',
-                           shows=filtered_shows,
+                           shows=shows,
                            intro_string=intro_string,
                            title="Super Sentai")
 
