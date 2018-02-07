@@ -21,7 +21,7 @@
         <div class="columns">
            <div class="column is-three-fifths is-offset-one-fifth">
               <h4 class="title is-4">
-                <a href="{{url_for('show',entry_id=show.id)}}">{{ show.title }}</a>
+                <a href="{{url_for('show',entry_id=show.slug)}}">{{ show.title }}</a>
               </h4>
               <h6 class="subtitle is-6">
                 <strong>Original release:</strong> {{ show.first_episode_date | datetime }}  - {{ show.last_episode_date | datetime}}

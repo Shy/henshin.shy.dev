@@ -101,4 +101,5 @@ ENV/
 # mypy
 .mypy_cache/
 
+import_export/
 .DS_Store

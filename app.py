@@ -24,7 +24,8 @@ app.jinja_env.filters['datetime'] = format_datetime
 def index():
     """index route. Gathers information from contentful and renders page"""
     shows = client.entries(
-        {'content_type': 'show', 'order': 'fields.first_episode_date'})
+        {'content_type': 'show',
+         'order': 'fields.first_episode_date'})
 
     entry_id = '7AmisHpntSSYOkuOcueecw'
     intro_string = client.entry(entry_id).intro_string
@@ -37,8 +38,12 @@ def index():
 
 @app.route('/show/<string:entry_id>')
 def show(entry_id):
-    """Take Show ID and return additional information. """
-    show = client.entry(entry_id)
+    """Take a Slug and return a Show."""
+    show = client.entries(
+        {'content_type': 'show',
+         'fields.slug': entry_id})
+    show = show[0]
+
     return render_template('show.html',
                            show=show,
                            title="- " + show.title)
