@@ -13,3 +13,14 @@ p, .summary p {
 .summary li {
     margin: 16px 0px 16px 0px;
 }
+
+@media screen and (min-width: 1216px) {
+  .container {
+    max-width: 960px;
+}
+
+@media screen and (min-width: 1408px) {
+  .container {
+        max-width: 960px;
+  }
+}

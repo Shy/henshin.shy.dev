@@ -7,7 +7,7 @@
       <div class="hero-body">
           <div class="container">
               <div class="columns">
-                  <div class="column is-three-fifths is-offset-one-fifth">
+                  <div class="column ">
                       <h1 class="title has-text-centered">
                           {{show.title}}
                       </h1>
@@ -15,7 +15,7 @@
               </div>
               <div class="columns">
                   {% for henshin in show.henshin %}
-                  <div class="column is-three-fifths is-offset-one-fifth">
+                  <div class="column">
                       <video controls>
                           <source src="https:{{ henshin.url() }}" type="video/webm" alt="{{show.title}}">
                           Your browser does not support video.
@@ -24,25 +24,23 @@
                   {% endfor %}
               </div>
               <div class="columns">
-                  <div class="column is-three-fifths is-offset-one-fifth summary">
+                  <div class="column">
                       <p>{{show.summary | markdown}}</p>
                   </div>
               </div>
               {% if show.characters %}
                   <div class="columns">
-                      <div class="column is-three-fifths is-offset-one-fifth">
+                      <div class="column">
                           <h2 class="title has-text-centered">
                               Characters
                           </h2>
                       </div>
                   </div>
                   {% for character in show.characters %}
-                      {% if loop.index % 3 == 1 %}
+                      {% if loop.index % 4 == 1 %}
                       <div class="columns">
-                          <div class="column is-one-fifth">
-                          </div>
                       {% endif %}
-                          <div class="column is-one-fifth">
+                          <div class="column is-one-quarter">
                               <div class="card">
                                   <div class="card-image">
                                       <figure class="image is-3by3">
@@ -64,7 +62,7 @@
                                   </div>
                               </div>
                           </div>
-                      {% if loop.index % 3 == 0 %}
+                      {% if loop.index % 4 == 0 %}
                       </div>
                       {% endif %}
                   {% endfor %}
@@ -76,7 +74,7 @@
   <section class="hero">
       <div class="container">
           <div class="columns">
-              <div class="column is-three-fifths is-offset-one-fifth summary">
+              <div class="column summary">
                   Information Sourced from: <a href="{{show.reference}}">Tv Tropes</a>
               </div>
           </div>
