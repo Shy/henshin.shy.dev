@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, abort
 from flaskext.markdown import Markdown
 import contentful
 
@@ -28,12 +28,12 @@ def index():
          'order': 'fields.first_episode_date'})
 
     entry_id = '7AmisHpntSSYOkuOcueecw'
-    intro_string = client.entry(entry_id).intro_string
+    intro_string = client.entry(entry_id)
 
     return render_template('index.html',
                            shows=shows,
-                           intro_string=intro_string,
-                           title="Henshin!")
+                           intro_string=intro_string.intro_string,
+                           title=intro_string.title)
 
 
 @app.route('/show/<string:entry_id>')
@@ -49,38 +49,27 @@ def show(entry_id):
                            title="- " + show.title)
 
 
-@app.route('/kamenrider')
-def kamenrider():
-    """Same as basic index, but only returns Kamen Rider"""
+@app.route('/<string:filter_string>')
+def filter(filter_string):
+    """Filters by show type"""
+    intro_string = client.entries(
+        {'content_type': 'intro_string',
+         'fields.type': filter_string})
+
+    if not intro_string:
+        abort(404)
+
+    intro_string = intro_string[0]
+
     shows = client.entries(
         {'content_type': 'show',
          'order': 'fields.first_episode_date',
-         'fields.type': 'Kamen Rider'})
-
-    entry_id = '5eyqYKNFYcokiMYCqeYEWM'
-    intro_string = client.entry(entry_id).intro_string
+         'fields.type': filter_string})
 
     return render_template('index.html',
                            shows=shows,
-                           intro_string=intro_string,
-                           title="Kamen Rider")
-
-
-@app.route('/supersentai')
-def supersentai():
-    """Same as basic index, but only returns Super Sentai"""
-    shows = client.entries(
-        {'content_type': 'show',
-         'order': 'fields.first_episode_date',
-         'fields.type': 'Super Sentai'})
-
-    entry_id = 'WlrfS7yUw0GioqMK2geqO'
-    intro_string = client.entry(entry_id).intro_string
-
-    return render_template('index.html',
-                           shows=shows,
-                           intro_string=intro_string,
-                           title="Super Sentai")
+                           intro_string=intro_string.intro_string,
+                           title=intro_string.title)
 
 
 # We only need this for local development.
