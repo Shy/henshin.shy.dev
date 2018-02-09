@@ -24,3 +24,22 @@ p, .summary p {
         max-width: 960px;
   }
 }
+
+.footer {
+    padding: 1rem 1rem 1rem;
+    margin-top: 3rem;
+}
+
+
+@media screen and (min-width: 1216px) {
+  nav {
+    max-width: 960px;
+    margin: auto;
+}
+
+@media screen and (min-width: 1408px) {
+  nav {
+        max-width: 960px;
+        margin: auto;
+  }
+}

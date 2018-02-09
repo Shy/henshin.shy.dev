@@ -1,27 +1,42 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <title>{% block title %}{% endblock %}</title>
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}"/>
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.css') }}"/>
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
-      {% block head %}
-      {% endblock %}
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36164310-3"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+        {% block head %}
+        {% endblock %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36164310-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'UA-36164310-3');
-      </script>
-   </head>
-   <body>
-      {% block content %}
-      {% endblock %}
-   </body>
+            gtag('config', 'UA-36164310-3');
+        </script>
+    </head>
+    <body>
+        <nav class="navbar is-transparent">
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="{{url_for('index')}}">
+                    Home
+                    </a>
+                    <a class="navbar-item" href="{{url_for('supersentai')}}">
+                    Super Sentai
+                    </a>
+                    <a class="navbar-item" href="{{url_for('kamenrider')}}">
+                    Kamen Rider
+                    </a>
+                </div>
+            </div>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </body>
 </html>
 
