@@ -1,6 +1,6 @@
 # zappa-contentful-starter
 
-Example application showing how to build an entirely serverless site with Python Flask and Contentful. Then seamlessly deploy it to AWS Lambda/API Gateway using [Zappa](https://github.com/Miserlou/Zappa).
+Example application showing how to build an entirely serverless site with Python, Flask and Contentful. Then seamlessly deploy it to AWS Lambda/API Gateway using [Zappa](https://github.com/Miserlou/Zappa). A live version of this site lives at [henshin.ruparel.co](https://henshin.ruparel.co/).
 
 ## Requirements
 
