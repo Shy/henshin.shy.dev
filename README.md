@@ -4,7 +4,7 @@ Example application showing how to build an entirely serverless site with Python
 
 ## Requirements
 
-To use this project you have to have a Contentful and AWS account. If you don't have a Contentful account yet you can register at [www.contentful.com/sign-up](https://www.contentful.com/sign-up/).
+To use this project you have to have a Contentful and AWS account. If you don't have a Contentful account yet, you can register at [www.contentful.com/sign-up](https://www.contentful.com/sign-up/).
 
 ## Getting started
 
@@ -20,7 +20,7 @@ $ pip install -r requirements.txt
 
 #### Set up the content model and update the API Keys.
 
-This project comes pre-connected to a live Contentful space. For you to be able to modify and evolve the project you'll need to create your own Contentful space.
+This project comes pre-connected to a live Contentful space. For you to be able to modify and evolve the project, you'll need to create your own Contentful space.
 
 From the Contentful website click on the name of the space in the top left corner of the interface and select 'Add new Space'. Select the blank space option. Name your space, select its default locale (language) and the organization it should belong to. Then hit 'Create Space'.
 
@@ -45,7 +45,7 @@ Once that's taken care of update your app.py file with your new SPACE_ID and DEL
 
 #### Running Locally and deploying to AWS Lambda
 
-To run the project locally you can use `python app.py`.
+To run the project locally, you can use `python app.py`.
 
 [Zappa](https://github.com/Miserlou/Zappa) handles most of the legwork required to deploy on Lambda. Make sure that you've already [installed](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) and [configured the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration).
 
