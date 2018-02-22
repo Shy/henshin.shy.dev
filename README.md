@@ -1,6 +1,6 @@
 # zappa-contentful-starter
 
-Example application showing how to build an entirely serverless site with Python Flask and Contentful. Then seamlessly deploy it to AWS Lambda/API Gateway using (Zappa)[https://github.com/Miserlou/Zappa].
+Example application showing how to build an entirely serverless site with Python Flask and Contentful. Then seamlessly deploy it to AWS Lambda/API Gateway using [Zappa](https://github.com/Miserlou/Zappa).
 
 ## Requirements
 
@@ -47,10 +47,10 @@ Once that's taken care of update your app.py file with your new SPACE_ID and DEL
 
 To run the project locally you can use `python app.py`.
 
-(Zappa)[https://github.com/Miserlou/Zappa] handles most of the legwork required to deploy on Lambda. Make sure that you've already (installed)[https://docs.aws.amazon.com/cli/latest/userguide/installing.html] and (configured the AWS CLI)[https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration].
+[Zappa](https://github.com/Miserlou/Zappa) handles most of the legwork required to deploy on Lambda. Make sure that you've already [installed](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) and [configured the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration).
 
 To deploy to the cloud you can either use the existing Zappa configuration file or let Zappa automatically configure your deployment settings with `zappa init`.
 
 To deploy a dev enviroment using the existing configration call `zappa deploy dev` and push an update with `zappa update dev`. You can also deploy a production enviroment with `zappa deploy production` and update with `zappa update production`. If you head over to API Gateway, you'll see a new API containing your function.
 
-From this point, it's also possible to set up a (custom domain and SSL certificate)[https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html].
+From this point, it's also possible to set up a [custom domain and SSL certificate](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html).
