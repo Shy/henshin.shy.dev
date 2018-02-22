@@ -24,7 +24,7 @@ This project comes pre-connected to a live Contentful space. For you to be able 
 
 From the Contentful website click on the name of the space in the top left corner of the interface and select 'Add new Space'. Select the blank space option. Name your space, select its default locale (language) and the organization it should belong to. Then hit 'Create Space'.
 
-To import the content model into your new space you'll need to install the (Contentful import tool)[https://github.com/contentful/contentful-import].
+To import the content model into your new space you'll need to install the [Contentful import tool](https://github.com/contentful/contentful-import).
 
 ```
 npm install -g contentful-import
