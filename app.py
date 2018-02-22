@@ -2,13 +2,15 @@ from flask import Flask, render_template, url_for, abort
 from flaskext.markdown import Markdown
 import contentful
 
+SPACE_ID = 'mt0pmhki5db7'
+DELIVERY_API_KEY = '8c7dbd270cb98e83f9d8d57fb8a2ab7bac9d7501905fb013c69995ebf1b2a719'
+
 client = contentful.Client(
-    'mt0pmhki5db7',
-    '8c7dbd270cb98e83f9d8d57fb8a2ab7bac9d7501905fb013c69995ebf1b2a719')
+    SPACE_ID,
+    DELIVERY_API_KEY)
 
 app = Flask(__name__)
 Markdown(app)
-app.debug = True
 
 
 def format_datetime(value):

@@ -1,3 +1,56 @@
 # zappa-henshin
 
-Fun project, more advanced than a static site made as part of onboarding process with Contentful. Utilizes Zappa to make the site serverless. 
+Example application showing how to build an entirely serverless site with Python flask, Zappa, and Contentful. Then seamlessly deploy it to AWS Lambda and API Gateway.
+
+## Requirements
+
+To use this project you have to have a Contentful and AWS account. If you don't have a Contentful account yet you can register at [www.contentful.com/sign-up](https://www.contentful.com/sign-up/).
+
+## Getting started
+
+### Get the source code and install dependencies.
+
+```
+$ git clone git@github.com:Shy/zappa-henshin.git
+$ cd zappa-henshin
+$ virtualenv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+
+#### Set up the content model and update the API Keys.
+
+This project comes pre-connected to a live Contentful space. For you to be able to modify and evolve the project you'll need to create your own Contentful space.
+
+From the Contentful website click on the name of the space in the top left corner of the interface and select 'Add new Space'. Select the blank space option. Name your space, select its default locale (language) and the organization it should belong to. Then hit 'Create Space'.
+
+To import the content model into your new space you'll need to install the (Contentful import tool)[https://github.com/contentful/contentful-import].
+
+```
+npm install -g contentful-import
+```
+
+Once that's installed you'll be able to import the content model into your new space using the following command:
+
+```
+contentful-import \
+  --space-id spaceID \
+  --management-token managementToken \
+  --content-file mport_export/export.json
+  ```
+
+Make sure to update the command with your spaceID and mangementToken. You're able to find both of those keys via app.contentful.com -> Space Settings -> API keys.
+
+Once that's taken care of update your app.py file with your new SPACE_ID and DELIVERY_API_KEY.
+
+#### Running Locally and deploying to AWS Lambda
+
+To run the project locally you can use `python app.py`.
+
+(Zappa)[https://github.com/Miserlou/Zappa] handles most of the legwork required to deploy on Lambda. Make sure that you've already (installed)[https://docs.aws.amazon.com/cli/latest/userguide/installing.html] and (configured the AWS CLI)[https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration].
+
+To deploy to the cloud you can either use the existing Zappa configuration file or let Zappa automatically configure your deployment settings with `zappa init`.
+
+To deploy a dev enviroment using the existing configration call `zappa deploy dev` and push an update with `zappa update dev`. You can also deploy a production enviroment with `zappa deploy production` and update with `zappa update production`. If you head over to API Gateway, you'll see a new API containing your function.
+
+From this point, it's also possible to set up a (custom domain and SSL certificate)[https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html].
