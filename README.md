@@ -11,7 +11,7 @@ To use this project you have to have a Contentful and AWS account. If you don't 
 ### Get the source code and install dependencies.
 
 ```
-$ git clone git@github.com:Shy/zappa-henshin.git
+$ git clone git@github.com:Shy/zappa-contentful-starter.git
 $ cd zappa-henshin
 $ virtualenv env
 $ source env/bin/activate
