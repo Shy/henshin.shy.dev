@@ -1,0 +1,4261 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "intro_string",
+        "type": "ContentType",
+        "createdAt": "2018-02-22T20:36:24.000Z",
+        "updatedAt": "2018-02-22T20:36:28.841Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:36:28.841Z",
+        "publishedAt": "2018-02-22T20:36:28.841Z"
+      },
+      "displayField": "title",
+      "name": "IntroString",
+      "description": "Strings for the tops of pages.",
+      "fields": [
+        {
+          "id": "introString",
+          "name": "intro_string",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "character",
+        "type": "ContentType",
+        "createdAt": "2018-02-22T20:36:24.023Z",
+        "updatedAt": "2018-02-22T20:36:28.421Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:36:28.421Z",
+        "publishedAt": "2018-02-22T20:36:28.421Z"
+      },
+      "displayField": "full_name",
+      "name": "Character",
+      "description": "Character of a show",
+      "fields": [
+        {
+          "id": "full_name",
+          "name": "Full name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "job_title",
+          "name": "Job name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "untransformed_photo",
+          "name": "untransformed_photo",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "transformed_photo",
+          "name": "transformed_photo",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "show",
+        "type": "ContentType",
+        "createdAt": "2018-02-22T20:36:24.071Z",
+        "updatedAt": "2018-02-22T20:36:27.984Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:36:27.984Z",
+        "publishedAt": "2018-02-22T20:36:27.984Z"
+      },
+      "displayField": "title",
+      "name": "Show",
+      "description": "Shows and all the associated information",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "first_episode_date",
+          "name": "first_episode_date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "last_episode_date",
+          "name": "last_episode_date",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "type",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "KamenRider",
+                  "SuperSentai"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "henshin",
+          "name": "henshin",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkMimetypeGroup": [
+                  "video"
+                ]
+              }
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "summary",
+          "name": "summary",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "reference",
+          "name": "reference",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-\\/]))?$"
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "characters",
+          "name": "characters",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "character"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5pcfeyxfrww6",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-02-22T20:36:29.025Z",
+        "createdBy": {
+          "sys": {
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-02-22T20:36:29.547Z",
+        "updatedBy": {
+          "sys": {
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "intro_string",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "introString",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "type",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5pcfeyxfrww6",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-02-22T20:36:28.484Z",
+        "createdBy": {
+          "sys": {
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-02-22T20:36:29.486Z",
+        "updatedBy": {
+          "sys": {
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "character",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "full_name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "job_title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "untransformed_photo",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "transformed_photo",
+          "widgetId": "assetLinkEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5pcfeyxfrww6",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-02-22T20:36:28.124Z",
+        "createdBy": {
+          "sys": {
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-02-22T20:36:29.452Z",
+        "updatedBy": {
+          "sys": {
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "show",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "first_episode_date",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker"
+        },
+        {
+          "fieldId": "last_episode_date",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker"
+        },
+        {
+          "fieldId": "type",
+          "widgetId": "listInput"
+        },
+        {
+          "fieldId": "henshin",
+          "widgetId": "assetLinksEditor"
+        },
+        {
+          "fieldId": "summary",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "reference",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "characters",
+          "widgetId": "entryLinksEditor"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "singleLine"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "1TNcOX5UzCcG6KqwG2KMg4",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:04.193Z",
+        "updatedAt": "2018-02-22T20:37:08.729Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:08.729Z",
+        "publishedAt": "2018-02-22T20:37:08.729Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "show"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Gekisou Sentai Carranger"
+        },
+        "first_episode_date": {
+          "en-US": "1996-03-01"
+        },
+        "last_episode_date": {
+          "en-US": "1997-02-07"
+        },
+        "type": {
+          "en-US": [
+            "SuperSentai"
+          ]
+        },
+        "henshin": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "3xqBNsZyM8iK4qeYIgGucI"
+              }
+            }
+          ]
+        },
+        "summary": {
+          "en-US": "Gekisō Sentai Carranger (Extreme Rush Squadron Carranger) is the twentieth installment in the [Super Sentai](../SuperSentai) series, airing from 1996 to 1997. It's about a group of idiot workers at Pegasus Garage who use the power of car-shaped constellations to fight a group of idiot aliens called \"Space Biker-Gang Bowzock\"\n\nAs the twentieth installment of the franchise, it bounces between being considered an Affectionate Parody of Super Sentai and all the tropes it has, while being a full Super Sentai series in and of itself. At the time, Super Sentai was suffering from low ratings due to a terrorist attack, Executive Meddling and writer discourse affecting the reception of Chouriki Sentai Ohranger, meaning ratings started low and continued dropping due to the continuance of executive mandates to make the show silly and comedic over being well-written. That changed in the latter half of the show, as the executives simply stopped caring and allowed the writers to do whatever the hell they wanted past that point... after which the show's viewership literally doubled in a week in its mid-30's.\n\nThe show has long been credited by western fans as saving Super Sentai from cancellation; however, this belief, as evidenced by multiple interviews, has absolutely zero basis in fact.\n\nAdapted in the US as Power Rangers Turbo. They attempted to make a serious series out of it at first (using the most goofy monster suits and stock footage imaginable) but gave up halfway - this disjointed approach nearly had Power Rangers getting cancelled, but the ratings recovered after the halfway point.\n\nIs avalaible with English Subtitles via [Shout Factory](https://www.amazon.com/Power-Rangers-Gekisou-Carranger-Complete/dp/B01MY5H5J3)."
+        },
+        "reference": {
+          "en-US": "http://tvtropes.org/pmwiki/pmwiki.php/Series/GekisouSentaiCarranger"
+        },
+        "slug": {
+          "en-US": "carranger"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "7a4TRIqG7CoOsUycikyioc",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:04.423Z",
+        "updatedAt": "2018-02-22T20:37:10.185Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:10.185Z",
+        "publishedAt": "2018-02-22T20:37:10.185Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "character"
+          }
+        }
+      },
+      "fields": {
+        "full_name": {
+          "en-US": "Lithia Tribe Princess Mei"
+        },
+        "job_title": {
+          "en-US": "PteraRanger"
+        },
+        "untransformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4oB6QMRDoQSCoCmWS68sgS"
+            }
+          }
+        },
+        "transformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4ZrJp03ArCcEsSa2OQKSSE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "4SGbVzuWusiquSykO2Ug4Y",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:04.457Z",
+        "updatedAt": "2018-02-22T20:37:10.515Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:10.515Z",
+        "publishedAt": "2018-02-22T20:37:10.515Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "character"
+          }
+        }
+      },
+      "fields": {
+        "full_name": {
+          "en-US": "Dime Tribe Knight Boi"
+        },
+        "job_title": {
+          "en-US": "TigerRanger"
+        },
+        "untransformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1sIZiKIk3eMSsEIkI0YKiY"
+            }
+          }
+        },
+        "transformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5McGVgi74s0Cms6ISueYSw"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "7ERRvmqyn6oqGaKai44uMY",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:04.514Z",
+        "updatedAt": "2018-02-22T20:37:09.915Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:09.915Z",
+        "publishedAt": "2018-02-22T20:37:09.915Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "character"
+          }
+        }
+      },
+      "fields": {
+        "full_name": {
+          "en-US": "Yamato Tribe Knight Burai"
+        },
+        "job_title": {
+          "en-US": "DragonRanger"
+        },
+        "untransformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4yw5O51rGUMG0K8UCUI606"
+            }
+          }
+        },
+        "transformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3DGczS5TQIS0CyGuCyqC0a"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "3ERBx4ZoZWQYeKw0UKc2IC",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.407Z",
+        "updatedAt": "2018-02-22T20:37:11.708Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:11.708Z",
+        "publishedAt": "2018-02-22T20:37:11.708Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "character"
+          }
+        }
+      },
+      "fields": {
+        "full_name": {
+          "en-US": "Yamato Tribe Prince Geki"
+        },
+        "job_title": {
+          "en-US": "TyrannoRanger"
+        },
+        "untransformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2HJHsTXTVmMoeuuw40uYIo"
+            }
+          }
+        },
+        "transformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "60ecnVzdO8uic8Ca028kM2"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "31EFcVSV9KYQe8IOWqSgEQ",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.505Z",
+        "updatedAt": "2018-02-22T20:37:11.420Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:11.420Z",
+        "publishedAt": "2018-02-22T20:37:11.420Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "character"
+          }
+        }
+      },
+      "fields": {
+        "full_name": {
+          "en-US": "Sharma Tribe Knight Goushi"
+        },
+        "job_title": {
+          "en-US": "MammothRanger"
+        },
+        "untransformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "EouyT07C00uaw4qiGOQSO"
+            }
+          }
+        },
+        "transformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2PFDxAP7POCGa8QoO0IWi4"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "5dSbBpk1M4GIaiqikwcwMG",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.512Z",
+        "updatedAt": "2018-02-22T20:37:10.939Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:10.938Z",
+        "publishedAt": "2018-02-22T20:37:10.938Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "character"
+          }
+        }
+      },
+      "fields": {
+        "full_name": {
+          "en-US": "Etoffe Tribe Knight Dan"
+        },
+        "job_title": {
+          "en-US": "TriceraRanger"
+        },
+        "untransformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5F30XWz1aoimc8QkCKuUMU"
+            }
+          }
+        },
+        "transformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3sXnTbRFcAMKOWGQgSQysa"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "7yGmdZP1MAeCUQkuOWCuQI",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.561Z",
+        "updatedAt": "2018-02-22T20:37:12.381Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:12.381Z",
+        "publishedAt": "2018-02-22T20:37:12.381Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "character"
+          }
+        }
+      },
+      "fields": {
+        "full_name": {
+          "en-US": "Kouta Kazuraba"
+        },
+        "job_title": {
+          "en-US": "Kamen Rider Gaim"
+        },
+        "untransformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2K4i8DMpC0gWYG4KsmWIcc"
+            }
+          }
+        },
+        "transformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4Z1nr3T8ViQCWgMgGI6aqq"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "WlrfS7yUw0GioqMK2geqO",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.675Z",
+        "updatedAt": "2018-02-22T20:37:12.723Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:12.723Z",
+        "publishedAt": "2018-02-22T20:37:12.723Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "intro_string"
+          }
+        }
+      },
+      "fields": {
+        "introString": {
+          "en-US": "The Super Sentai Series (スーパー戦隊シリーズ) is the name given to the long running Japanese \"superhero team\" genre of shows produced by Toei and Bandai and aired by TV Asahi, that is used as the basis for Power Rangers. (\"Super\" refers to their use of mecha, and \"Sentai\" is the Japanese word for \"task force\" or, literally, \"fighting squadron\" and was also a term used for Japanese squadrons in World War II.) The shows are of the \"tokusatsu\" genre, featuring live action characters and colorful special effects. This series is one of the most prominent tokusatsu productions in Japan, alongside the Ultra Series, the [Kamen Rider Series](KamenRider), and the Metal Hero Series. The first Sentai series, Himitsu Sentai Gorenger, in April 1975, was created by the late Shotaro Ishinomori, creator of [Kamen Rider](KamenRider) and Cyborg 009 in 1975.\n\nFollowing J.A.K.Q., the second Super Sentai, Toei chose to work with Marvel Comics to produce the live action adaptation of Spider-Man (1978), which included the first giant robot in a Toei Superhero show. This concept was later used in Toei and Marvel's project Battle Fever J (1979), the third Super Sentai. The following forth Super Sentai, Denshi Sentai Denziman, was the first production solely by Toei.\n\nAll Sentai feature heroes that use a transformation call (referred to as a [henshin sequence](home)), a short phrase or sequence of words spoken just before or simultaneously with the transformation. The nature of the call varies from team to team but it is implied that the call must be spoken in order to successfully transform."
+        },
+        "type": {
+          "en-US": "SuperSentai"
+        },
+        "title": {
+          "en-US": "Super Sentai"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "78rmqInwaWG644QcwyseK8",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.690Z",
+        "updatedAt": "2018-02-22T20:37:12.060Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:12.060Z",
+        "publishedAt": "2018-02-22T20:37:12.060Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "character"
+          }
+        }
+      },
+      "fields": {
+        "full_name": {
+          "en-US": "Kaito Kumon"
+        },
+        "job_title": {
+          "en-US": "Kamen Rider Baron"
+        },
+        "untransformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4xsOixYxRCuSOcsiwmYmAk"
+            }
+          }
+        },
+        "transformed_photo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "476Ydb2TjGUoYGYqawS40q"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "5eyqYKNFYcokiMYCqeYEWM",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.697Z",
+        "updatedAt": "2018-02-22T20:37:13.072Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:13.072Z",
+        "publishedAt": "2018-02-22T20:37:13.072Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "intro_string"
+          }
+        }
+      },
+      "fields": {
+        "introString": {
+          "en-US": "The Kamen Rider Series (仮面ライダーシリーズ, translated as Masked Rider Series) is a franchise of manga and tokusatsu television programs and films created by manga artist Shotaro Ishinomori. The various Kamen Rider media generally feature a motorcycle-riding superhero with a varying motif who fights supervillains often referred to as kaijin (怪人). Generally, most Kamen Riders call out [\"Henshin!\"](home) during their transformation sequences. Variations of this phrase have been used by various Riders, either when transforming or switching between forms. \n\nThe franchise began in 1971 with the Kamen Rider television series which followed college student Takeshi Hongo and his quest to defeat the world-conquering Shocker organization. Over the years, the popularity of the franchise has grown and the original series has spawned many television and theatrical sequels. The cultural impact of the series in Japan resulted in Akimasa Nakamura naming two minor planets in honor of the series: 12408 Fujioka, after actor Hiroshi Fujioka, known for his portrayal of Kamen Rider, and 12796 Kamenrider, after the series, itself."
+        },
+        "type": {
+          "en-US": "KamenRider"
+        },
+        "title": {
+          "en-US": "Kamen Rider"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "4XdcFb5QYgAE42euoIUiAc",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.730Z",
+        "updatedAt": "2018-02-22T20:37:13.388Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:13.388Z",
+        "publishedAt": "2018-02-22T20:37:13.388Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "show"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Kamen Rider Kabuto"
+        },
+        "first_episode_date": {
+          "en-US": "2006-01-29"
+        },
+        "last_episode_date": {
+          "en-US": "2007-01-21"
+        },
+        "type": {
+          "en-US": [
+            "KamenRider"
+          ]
+        },
+        "henshin": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "38WqdBjjNKuOKUAMQgKi28"
+              }
+            }
+          ]
+        },
+        "summary": {
+          "en-US": "The 2006-2007 series of [Kamen Rider](../KamenRider) and the seventh installment in the Heisei Era. Also notable for being the 35th anniversary series of the Kamen Rider franchise.\n\nIn 1999, a meteor fell to Earth and obliterated the Shibuya district of Tokyo. Along with the destruction the meteor brought something far more dangerous: the Worm, an insectoid race of aliens with the ability to perfectly mimic the appearance and memories of a human. Seven years later, the Worm have infiltrated society and are slowly killing off the human race, replacing them with their own.\n\nEarth's only defence lies in the secret organization ZECT, who are losing ground against the evolved Worm and their Clock Up ability. To counter this, ZECT develops the Masked Rider System and Kabuto Zecter weapons, which new recruit Arata Kagami is eager to try out.\n\nEnter Souji Tendou: genius chef, philosopher, loving brother, martial arts expert and all-round Ace at everything he does (also, kind of a dick). During a Worm attack, Kagami calls out for the Kabuto Zecter but instead it goes to Tendou, who proclaims that he is The Chosen One and uses it to transform into Kamen Rider Kabuto.\n\nPartnered with the Super Sentai show GoGo Sentai Boukenger after initially airing alongside the final episodes of Mahou Sentai Magiranger in the Super Hero Time block."
+        },
+        "reference": {
+          "en-US": "http://tvtropes.org/pmwiki/pmwiki.php/Series/KamenRiderKabuto"
+        },
+        "slug": {
+          "en-US": "kabuto"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "7AmisHpntSSYOkuOcueecw",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.793Z",
+        "updatedAt": "2018-02-22T20:37:13.682Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:13.681Z",
+        "publishedAt": "2018-02-22T20:37:13.682Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "intro_string"
+          }
+        }
+      },
+      "fields": {
+        "introString": {
+          "en-US": "\"Henshin!\" (変身) is the Japanese word for \"transformation/transform\". It refers to a subset of Japanese Super Hero that transforms between a super-powered form and a normal civilian mode. A [Henshin Hero](http://tvtropes.org/pmwiki/pmwiki.php/Main/HenshinHero) has distinct normal and powered forms, and needs to actively switch between the two. In essence, the character's powers are all turned off while they are in their Secret Identity."
+        },
+        "type": {
+          "en-US": "HomePage"
+        },
+        "title": {
+          "en-US": "Henshin!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "53Dfakp1aEwkooyqCgCU86",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:06.474Z",
+        "updatedAt": "2018-02-22T20:37:09.506Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:09.506Z",
+        "publishedAt": "2018-02-22T20:37:09.506Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "show"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Kamen Rider Gaim"
+        },
+        "first_episode_date": {
+          "en-US": "2013-10-06"
+        },
+        "last_episode_date": {
+          "en-US": "2014-09-28"
+        },
+        "type": {
+          "en-US": [
+            "KamenRider"
+          ]
+        },
+        "henshin": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "55WtGfglXaMEscIKGEcqqC"
+              }
+            }
+          ]
+        },
+        "summary": {
+          "en-US": "The 2013-2014 [Kamen Rider series](../KamenRider); the fifteenth entry in the franchise's Heisei era and the twenty-fourth series overall. The head writer is Gen Urobuchi of Fate/Zero, Puella Magi Madoka Magica and Psycho-Pass fame.\n\nIn Zawame City, the suffocating presence of the Yggdrasill Corporation has led to the city's youth forming competing street-dance crews as a way to bring energy and excitement back into their lives.\n\nAnother popular activity is a Mons game that uses fruit and nut-themed padlocks called Lockseeds to summon tiny creatures called \"Inves\". As the game becomes more and more popular, strange dimensional tears begin to open around the city to the mysterious Helheim Forest. When an Inves consumes a fruit from this forest, there is a chance of it evolving into a more powerful form but at the risk of losing all control and going on a hunger-induced rampage.\n\nKouta Kazuraba is an earnest young man who quits his dance crew - Team Gaim - so that he can find a job and support his sister. When he is caught up in the attack of a berserk Inves, Kouta stumbles upon a strange transformation belt and Lockseed, which he uses to transform into \"Armored Rider Gaim\" and defend his friends and the city.\n\nHowever, it is not as simple as that. There are many other Armored Riders in the city with their own motivations and sense of justice, and soon a modern version of the Warring States Era erupts between the masked warriors.\n\nEnded with 47 episodes. Preceded by Kamen Rider Wizard, followed by Kamen Rider Drive. Aired alongside Super Sentai shows Zyuden Sentai Kyoryuger and then Ressha Sentai ToQger, the latter of which sharing a one hour crossover with as well as hosting a cameo in the spring Rider movie, in the Super Hero Time block."
+        },
+        "reference": {
+          "en-US": "http://tvtropes.org/pmwiki/pmwiki.php/Series/KamenRiderGaim"
+        },
+        "characters": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7yGmdZP1MAeCUQkuOWCuQI"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "78rmqInwaWG644QcwyseK8"
+              }
+            }
+          ]
+        },
+        "slug": {
+          "en-US": "gaim"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "6R9TE6YJpeoowYiKMmuMGo",
+        "type": "Entry",
+        "createdAt": "2018-02-22T20:37:04.403Z",
+        "updatedAt": "2018-02-22T20:37:09.092Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-02-22T20:37:09.092Z",
+        "publishedAt": "2018-02-22T20:37:09.092Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "show"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Kyōryū Sentai Zyuranger"
+        },
+        "first_episode_date": {
+          "en-US": "1992-02-21"
+        },
+        "last_episode_date": {
+          "en-US": "1993-02-12"
+        },
+        "type": {
+          "en-US": [
+            "SuperSentai"
+          ]
+        },
+        "henshin": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1xiRUFCf7eUoWwYWuMguac"
+              }
+            }
+          ]
+        },
+        "summary": {
+          "en-US": "Kyoryu Sentai Zyuranger (Dinosaur Squadron Beastranger) is the sixteenth entry in the [Super Sentai franchise](../SuperSentai), which aired from 1992 to 1993.\n\n170 million years ago, humans lived in peace with dinosaurs, until the evil witch Bandora appeared, killed the dinosaurs, and began to attack humanity. The Guardian Beasts, great gods in the form of prehistoric-animal-shaped Humongous Mecha, sealed her away on the stray planet Nemesis. In modern times, astronauts exploring Nemesis accidentally release Bandora and her followers from captivity, and she again starts to attempt to kill humanity, starting with the children. The ancient wizard Barza, in disguise as a landlord, releases five warriors from the five prehistoric human tribes to fight Bandora's forces alongside the Guardian Beasts.\n\nThis series is very important for five reasons:\n\n1. It was the first series that was adapted for American audiences as part of the Power Rangers franchise, serving as the basis for the first season of Mighty Morphin' Power Rangers and having the costumes of its heroes and villains continued to be used for the next two.\n2. It started the Sixth Ranger tradition with the addition of Burai, the Dragon Ranger, whose story and fate was the focus of much of the show after his appearance.\n3. It is a turning point where Sentai becomes more fantasy and/or mystical-based.\n4. It was the first series to get an [official North American release in its original, unadapted form, courtesy of Shout! Factory](https://www.amazon.com/gp/product/B00P9UVC0I), who negotiated with Saban Brands and Toei Company for the rights.\n5. It was the first series to be featured in a Super Robot Wars game, being featured in Super Robot Wars X Omega as a one-time event."
+        },
+        "reference": {
+          "en-US": "http://tvtropes.org/pmwiki/pmwiki.php/Series/KyoryuSentaiZyuranger"
+        },
+        "characters": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3ERBx4ZoZWQYeKw0UKc2IC"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "31EFcVSV9KYQe8IOWqSgEQ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5dSbBpk1M4GIaiqikwcwMG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4SGbVzuWusiquSykO2Ug4Y"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7a4TRIqG7CoOsUycikyioc"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7ERRvmqyn6oqGaKai44uMY"
+              }
+            }
+          ]
+        },
+        "slug": {
+          "en-US": "zyuranger"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "7dIZwbUMNO0gIIwywGmWKW",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:29.772Z",
+        "updatedAt": "2018-02-22T20:37:03.616Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:03.616Z",
+        "publishedAt": "2018-02-22T20:37:03.616Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Dairanger Henshin"
+        },
+        "description": {
+          "en-US": "Dairanger Henshin"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.contentful.com/5pcfeyxfrww6/7dIZwbUMNO0gIIwywGmWKW/6c42134cca5aca89f3c3906d74202668/dairanger.webm",
+            "details": {
+              "size": 7416180
+            },
+            "fileName": "dairanger.webm",
+            "contentType": "video/webm"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "6YDZ9QpBpCYYoQ4OMGca2w",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:29.776Z",
+        "updatedAt": "2018-02-22T20:36:56.936Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:56.936Z",
+        "publishedAt": "2018-02-22T20:36:56.936Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "MegaRanger Henshin"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.contentful.com/5pcfeyxfrww6/6YDZ9QpBpCYYoQ4OMGca2w/8894fe9567379d683cfc5b1bfe2645a5/megaranger.webm",
+            "details": {
+              "size": 4381279
+            },
+            "fileName": "megaranger.webm",
+            "contentType": "video/webm"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "6LZnBtJxssmIY8mgyKsGEA",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:29.784Z",
+        "updatedAt": "2018-02-22T20:37:02.993Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:02.993Z",
+        "publishedAt": "2018-02-22T20:37:02.993Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Ohranger Henshin"
+        },
+        "description": {
+          "en-US": "Ohranger Henshin"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.contentful.com/5pcfeyxfrww6/6LZnBtJxssmIY8mgyKsGEA/0cf6e72c2bbcbf1e4ea0ab5ba5664c36/ohranger.webm",
+            "details": {
+              "size": 4000412
+            },
+            "fileName": "ohranger.webm",
+            "contentType": "video/webm"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "5WdXCJ3SnYUOIk2KKC4KWe",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:29.970Z",
+        "updatedAt": "2018-02-22T20:37:03.374Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:03.374Z",
+        "publishedAt": "2018-02-22T20:37:03.374Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Go-onger Henshin"
+        },
+        "description": {
+          "en-US": "Go-onger Henshin"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.contentful.com/5pcfeyxfrww6/5WdXCJ3SnYUOIk2KKC4KWe/a13a9d296c5167019efeb35f643f39d2/goonger.webm",
+            "details": {
+              "size": 22037866
+            },
+            "fileName": "goonger.webm",
+            "contentType": "video/webm"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "4oB6QMRDoQSCoCmWS68sgS",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:30.095Z",
+        "updatedAt": "2018-02-22T20:36:57.713Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:57.713Z",
+        "publishedAt": "2018-02-22T20:36:57.713Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Mei"
+        },
+        "description": {
+          "en-US": "Mei"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/4oB6QMRDoQSCoCmWS68sgS/a613c75a7ab626c10b53d0702292155b/PteraRanger04.jpg",
+            "details": {
+              "size": 202662,
+              "image": {
+                "width": 2048,
+                "height": 1536
+              }
+            },
+            "fileName": "PteraRanger04.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "4ZrJp03ArCcEsSa2OQKSSE",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:30.184Z",
+        "updatedAt": "2018-02-22T20:36:58.025Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:58.025Z",
+        "publishedAt": "2018-02-22T20:36:58.025Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "PteraRanger"
+        },
+        "description": {
+          "en-US": "PteraRanger"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/4ZrJp03ArCcEsSa2OQKSSE/8a49cd45a29403f96cb5d9799ad80bcc/Pinkarenjaa.jpg",
+            "details": {
+              "size": 256893,
+              "image": {
+                "width": 500,
+                "height": 378
+              }
+            },
+            "fileName": "Pinkarenjaa.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "1sIZiKIk3eMSsEIkI0YKiY",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:30.407Z",
+        "updatedAt": "2018-02-22T20:36:58.610Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:58.610Z",
+        "publishedAt": "2018-02-22T20:36:58.610Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Dime Tribe Knight Boi"
+        },
+        "description": {
+          "en-US": "Dime Tribe Knight Boi"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/1sIZiKIk3eMSsEIkI0YKiY/545efb83cc28b12b42d9773b35e7f7bc/TigerRanger02.jpg",
+            "details": {
+              "size": 139881,
+              "image": {
+                "width": 1063,
+                "height": 797
+              }
+            },
+            "fileName": "TigerRanger02.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "5McGVgi74s0Cms6ISueYSw",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:30.425Z",
+        "updatedAt": "2018-02-22T20:36:58.397Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:58.397Z",
+        "publishedAt": "2018-02-22T20:36:58.397Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "TigerRanger"
+        },
+        "description": {
+          "en-US": "TigerRanger"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/5McGVgi74s0Cms6ISueYSw/d66eebae2c9d06e8aec4eb40e61cb92b/Mighty_Morphin_Yellow_Ranger_Pose.jpg",
+            "details": {
+              "size": 106580,
+              "image": {
+                "width": 852,
+                "height": 620
+              }
+            },
+            "fileName": "Mighty_Morphin_Yellow_Ranger_Pose.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "3sXnTbRFcAMKOWGQgSQysa",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:30.684Z",
+        "updatedAt": "2018-02-22T20:36:59.300Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:59.300Z",
+        "publishedAt": "2018-02-22T20:36:59.300Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "TriceraRanger"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/3sXnTbRFcAMKOWGQgSQysa/efbbca6d97738e61b57a1923ac2deaf7/Tumblr_mudu35LyRy1r0j0yso1_500.jpg",
+            "details": {
+              "size": 44344,
+              "image": {
+                "width": 500,
+                "height": 375
+              }
+            },
+            "fileName": "Tumblr_mudu35LyRy1r0j0yso1_500.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "5F30XWz1aoimc8QkCKuUMU",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:30.859Z",
+        "updatedAt": "2018-02-22T20:36:58.840Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:58.840Z",
+        "publishedAt": "2018-02-22T20:36:58.840Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Dan"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/5F30XWz1aoimc8QkCKuUMU/54cbb7aa980ec52a13a00f94bd239548/TriceraRanger01.jpg",
+            "details": {
+              "size": 74258,
+              "image": {
+                "width": 894,
+                "height": 667
+              }
+            },
+            "fileName": "TriceraRanger01.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "2PFDxAP7POCGa8QoO0IWi4",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:30.867Z",
+        "updatedAt": "2018-02-22T20:36:59.663Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:59.663Z",
+        "publishedAt": "2018-02-22T20:36:59.663Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "MammothRanger"
+        },
+        "description": {
+          "en-US": "MammothRanger"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/2PFDxAP7POCGa8QoO0IWi4/ca5e4dc3972bb3ebfce042bfb5cc332a/Tumblr_mudv9rNaar1r0j0yso1_500.jpg",
+            "details": {
+              "size": 40112,
+              "image": {
+                "width": 500,
+                "height": 375
+              }
+            },
+            "fileName": "Tumblr_mudv9rNaar1r0j0yso1_500.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "EouyT07C00uaw4qiGOQSO",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.098Z",
+        "updatedAt": "2018-02-22T20:36:59.950Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:59.950Z",
+        "publishedAt": "2018-02-22T20:36:59.950Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Goushi"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/EouyT07C00uaw4qiGOQSO/42804f28c4c3cf4daa59fd7139e2b86d/MammothRanger02.jpg",
+            "details": {
+              "size": 126017,
+              "image": {
+                "width": 1028,
+                "height": 769
+              }
+            },
+            "fileName": "MammothRanger02.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "60ecnVzdO8uic8Ca028kM2",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.257Z",
+        "updatedAt": "2018-02-22T20:37:00.320Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:00.320Z",
+        "publishedAt": "2018-02-22T20:37:00.320Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "TyrannoRanger"
+        },
+        "description": {
+          "en-US": "TyrannoRanger"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/60ecnVzdO8uic8Ca028kM2/a7bd9ee3ef7fafea84554b6b6f002ccc/Mighty_Morphin_Red_Ranger_Pose.jpg",
+            "details": {
+              "size": 111634,
+              "image": {
+                "width": 2112,
+                "height": 1497
+              }
+            },
+            "fileName": "Mighty_Morphin_Red_Ranger_Pose.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "2HJHsTXTVmMoeuuw40uYIo",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.374Z",
+        "updatedAt": "2018-02-22T20:37:00.662Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:00.662Z",
+        "publishedAt": "2018-02-22T20:37:00.662Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Geki"
+        },
+        "description": {
+          "en-US": "Geki"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/2HJHsTXTVmMoeuuw40uYIo/fa6e110476b4883482b182d0790656d6/TyrannoRanger02.jpg",
+            "details": {
+              "size": 99955,
+              "image": {
+                "width": 1155,
+                "height": 865
+              }
+            },
+            "fileName": "TyrannoRanger02.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "476Ydb2TjGUoYGYqawS40q",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.492Z",
+        "updatedAt": "2018-02-22T20:37:00.914Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:00.914Z",
+        "publishedAt": "2018-02-22T20:37:00.914Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Kamen Rider Baron"
+        },
+        "description": {
+          "en-US": "Kamen Rider Baron"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/476Ydb2TjGUoYGYqawS40q/cd842c20cdb3269ffed8d0017c6f5bc6/baron.png",
+            "details": {
+              "size": 2020937,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "baron.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "1xiRUFCf7eUoWwYWuMguac",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.504Z",
+        "updatedAt": "2018-02-22T20:37:02.757Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:02.757Z",
+        "publishedAt": "2018-02-22T20:37:02.757Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Zyuranger Henshin"
+        },
+        "description": {
+          "en-US": "Zyuranger Henshin"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.contentful.com/5pcfeyxfrww6/1xiRUFCf7eUoWwYWuMguac/ddaa2bc5f3b602bf544f99df6523801f/zyuranger.webm",
+            "details": {
+              "size": 5691571
+            },
+            "fileName": "zyuranger.webm",
+            "contentType": "video/webm"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "3xqBNsZyM8iK4qeYIgGucI",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.604Z",
+        "updatedAt": "2018-02-22T20:37:03.915Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:03.915Z",
+        "publishedAt": "2018-02-22T20:37:03.915Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Carranger Henshin"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.contentful.com/5pcfeyxfrww6/3xqBNsZyM8iK4qeYIgGucI/121b6b21219a7aedf5702676ca05a5cd/carranger.webm",
+            "details": {
+              "size": 9651289
+            },
+            "fileName": "carranger.webm",
+            "contentType": "video/webm"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "4xsOixYxRCuSOcsiwmYmAk",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.621Z",
+        "updatedAt": "2018-02-22T20:37:01.123Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:01.123Z",
+        "publishedAt": "2018-02-22T20:37:01.123Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Kaito Kumon"
+        },
+        "description": {
+          "en-US": "Kaito Kumon"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/4xsOixYxRCuSOcsiwmYmAk/9e48dc901a60b657f175d43973e4b964/Kaitokumonbaron.png",
+            "details": {
+              "size": 2300918,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "Kaitokumonbaron.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "3DGczS5TQIS0CyGuCyqC0a",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.639Z",
+        "updatedAt": "2018-02-22T20:36:57.277Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:57.277Z",
+        "publishedAt": "2018-02-22T20:36:57.277Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "DragonRanger"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/3DGczS5TQIS0CyGuCyqC0a/e136a8d2f8549296c0f1701ad7baa25d/Mighty_Morphin_Green_Ranger_Pose.jpg",
+            "details": {
+              "size": 93717,
+              "image": {
+                "width": 1931,
+                "height": 1451
+              }
+            },
+            "fileName": "Mighty_Morphin_Green_Ranger_Pose.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "4yw5O51rGUMG0K8UCUI606",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.688Z",
+        "updatedAt": "2018-02-22T20:36:57.515Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:36:57.515Z",
+        "publishedAt": "2018-02-22T20:36:57.515Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Burai"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/4yw5O51rGUMG0K8UCUI606/faf0d0c745db22fb68593a70753fc2e4/8548554870_1d7fb37b9a.jpg",
+            "details": {
+              "size": 40355,
+              "image": {
+                "width": 400,
+                "height": 324
+              }
+            },
+            "fileName": "8548554870_1d7fb37b9a.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "4Z1nr3T8ViQCWgMgGI6aqq",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:31.753Z",
+        "updatedAt": "2018-02-22T20:37:01.356Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:01.356Z",
+        "publishedAt": "2018-02-22T20:37:01.356Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Gaim"
+        },
+        "description": {
+          "en-US": "Gaim"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/4Z1nr3T8ViQCWgMgGI6aqq/c60cc615ebee0f38ba7baa157691086d/gaim.jpg",
+            "details": {
+              "size": 94676,
+              "image": {
+                "width": 800,
+                "height": 800
+              }
+            },
+            "fileName": "gaim.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "60hwdTFFQsQGIwE8I6Yaok",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:32.077Z",
+        "updatedAt": "2018-02-22T20:37:02.480Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:02.480Z",
+        "publishedAt": "2018-02-22T20:37:02.480Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "OOO Henshin"
+        },
+        "description": {
+          "en-US": "OOO Henshin"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.contentful.com/5pcfeyxfrww6/60hwdTFFQsQGIwE8I6Yaok/633c3b515785f5b598d631b4f9cadc85/ooo.webm",
+            "details": {
+              "size": 6471133
+            },
+            "fileName": "ooo.webm",
+            "contentType": "video/webm"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "55WtGfglXaMEscIKGEcqqC",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:33.552Z",
+        "updatedAt": "2018-02-22T20:37:02.272Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:02.272Z",
+        "publishedAt": "2018-02-22T20:37:02.272Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Gaim Henshin"
+        },
+        "description": {
+          "en-US": "Gaim Henshin"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.contentful.com/5pcfeyxfrww6/55WtGfglXaMEscIKGEcqqC/e0623d4551cce7fd280eeadcd9581ba8/gaim.webm",
+            "details": {
+              "size": 7434743
+            },
+            "fileName": "gaim.webm",
+            "contentType": "video/webm"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "2K4i8DMpC0gWYG4KsmWIcc",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:33.567Z",
+        "updatedAt": "2018-02-22T20:37:01.628Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:01.628Z",
+        "publishedAt": "2018-02-22T20:37:01.628Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Kouta Kazuraba"
+        },
+        "description": {
+          "en-US": "Kouta Kazuraba"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.contentful.com/5pcfeyxfrww6/2K4i8DMpC0gWYG4KsmWIcc/31a566d9dcf7b7218884c7b27a21649b/KoutaMovieRegular.png",
+            "details": {
+              "size": 1476950,
+              "image": {
+                "width": 1080,
+                "height": 1080
+              }
+            },
+            "fileName": "KoutaMovieRegular.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "38WqdBjjNKuOKUAMQgKi28",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:33.587Z",
+        "updatedAt": "2018-02-22T20:37:01.996Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "publishedVersion": 2,
+        "firstPublishedAt": "2018-02-22T20:37:01.996Z",
+        "publishedAt": "2018-02-22T20:37:01.996Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Kabuto Henshin"
+        },
+        "description": {
+          "en-US": "Kabuto Henshin"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.contentful.com/5pcfeyxfrww6/38WqdBjjNKuOKUAMQgKi28/f55ab9befb5a801dcfd91a1f8cef3dd8/kabuto.webm",
+            "details": {
+              "size": 7073948
+            },
+            "fileName": "kabuto.webm",
+            "contentType": "video/webm"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "id": "5OcpzLaas0mSMyaMeakG8c",
+        "type": "Asset",
+        "createdAt": "2018-02-22T20:36:33.795Z",
+        "updatedAt": "2018-02-22T20:36:33.795Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "version": 1
+      },
+      "fields": {
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "US English",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "4jyCds2jsd859fZ6LM4Q18",
+        "version": 2,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "createdAt": "2018-02-22T20:33:24Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedAt": "2018-02-22T20:36:23Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Author",
+      "description": "Allows editing of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "4jnegSEgvyUll5u8uluqt8",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "createdAt": "2018-02-22T20:33:24Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedAt": "2018-02-22T20:33:24Z"
+      }
+    },
+    {
+      "name": "Developer",
+      "description": "Allows reading Entries and managing API Keys",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": "all"
+      },
+      "sys": {
+        "type": "Role",
+        "id": "4jnWbrudzLB42pMbax6QZw",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "createdAt": "2018-02-22T20:33:24Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedAt": "2018-02-22T20:33:24Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "4joAGZCin7v024b1NV4z1Y",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "createdAt": "2018-02-22T20:33:24Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedAt": "2018-02-22T20:33:24Z"
+      }
+    },
+    {
+      "name": "Freelancer",
+      "description": "Allows only editing of content they created themselves",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "delete"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "delete"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "4jpgQCneTqcKiOtyOkSu1g",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "createdAt": "2018-02-22T20:33:24Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedAt": "2018-02-22T20:33:24Z"
+      }
+    },
+    {
+      "name": "Translator 1",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "4jq4UsuIShPSvaJTlIQGUu",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "createdAt": "2018-02-22T20:33:24Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedAt": "2018-02-22T20:33:24Z"
+      }
+    },
+    {
+      "name": "Translator 2",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "4jqYf6ReuRpVZgYKUqgqp0",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "createdAt": "2018-02-22T20:33:24Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedAt": "2018-02-22T20:33:24Z"
+      }
+    },
+    {
+      "name": "Translator 3",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "4jrCt4LjW8V8ACoaHUqf4i",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5pcfeyxfrww6"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "createdAt": "2018-02-22T20:33:24Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7rzZOcLgy7z0Ud2Sb5EyHy"
+          }
+        },
+        "updatedAt": "2018-02-22T20:33:24Z"
+      }
+    }
+  ]
+}
