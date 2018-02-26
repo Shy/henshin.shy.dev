@@ -21,6 +21,7 @@ $ virtualenv env
 $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
+You can use `python app.py` to run the application locally. 
 
 #### Set up the content model and update the API Keys.
 
@@ -45,7 +46,7 @@ contentful-import \
 
 Make sure to update the command with your spaceID and mangementToken. You're able to find both of those keys via app.contentful.com -> Space Settings -> API keys.
 
-Once that's taken care of update your app.py file with your new SPACE_ID and DELIVERY_API_KEY.
+Once that's taken care of update your [app.py](https://github.com/Shy/zappa-contentful/blob/master/app.py#L5-L6) file with your new SPACE_ID and DELIVERY_API_KEY.
 
 #### Running Locally and deploying to AWS Lambda
 
