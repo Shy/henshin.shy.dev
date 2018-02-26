@@ -15,8 +15,8 @@ To use this project you have to have a Contentful and AWS account. If you don't 
 ### Get the source code and install dependencies.
 
 ```
-$ git clone git@github.com:Shy/zappa-contentful-starter.git
-$ cd zappa-henshin
+$ git clone git@github.com:Shy/zappa-contentful.git
+$ cd zappa-contentful
 $ virtualenv env
 $ source env/bin/activate
 $ pip install -r requirements.txt
@@ -40,7 +40,7 @@ Once that's installed you'll be able to import the content model into your new s
 contentful-import \
   --space-id spaceID \
   --management-token managementToken \
-  --content-file mport_export/export.json
+  --content-file import_export/export.json
   ```
 
 Make sure to update the command with your spaceID and mangementToken. You're able to find both of those keys via app.contentful.com -> Space Settings -> API keys.
@@ -55,6 +55,10 @@ To run the project locally, you can use `python app.py`.
 
 To deploy to the cloud you can either use the existing Zappa configuration file or let Zappa automatically configure your deployment settings with `zappa init`.
 
-To deploy a dev enviroment using the existing configration call `zappa deploy dev` and push an update with `zappa update dev`. You can also deploy a production enviroment with `zappa deploy production` and update with `zappa update production`. If you head over to API Gateway, you'll see a new API containing your function.
+If you use the configuration file in this repo you can deploy both a dev and production environment. For your dev environment use `zappa deploy dev` and for production `zappa deploy production`. The zappa deploy command will return a URL where you can access your website. 
+
+Once you've deployed your dev and production environment if you make a code change you can use `zappa update dev` or `zappa update production` to push your code change to lambda without resulting in a chance to the URL that your function is deployed on. 
+
+If you head over to API Gateway, you'll see a new API containing your function.
 
 From this point, it's also possible to set up a [custom domain and SSL certificate](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html).
