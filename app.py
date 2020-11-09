@@ -1,6 +1,7 @@
-from flask import Flask, render_template, url_for, abort
+from flask import Flask, render_template, url_for, abort, request, redirect
 from flaskext.markdown import Markdown
 import contentful
+from trycourier import Courier
 from dotenv import load_dotenv
 import os
 
@@ -8,8 +9,12 @@ load_dotenv()
 SPACE_ID = os.environ.get("SPACE_ID")
 DELIVERY_API_KEY = os.environ.get("DELIVERY_API_KEY")
 API_URL = os.environ.get("API_URL")
+ENV = os.environ.get("ENV")
+COURIER_AUTH_TOKEN = os.environ.get("COURIER_AUTH_TOKEN")
+FLASK_DEBUG = os.environ.get("FLASK_DEBUG")
 
-client = contentful.Client(SPACE_ID, DELIVERY_API_KEY, API_URL)
+client = contentful.Client(SPACE_ID, DELIVERY_API_KEY, API_URL, environment=ENV)
+courier_client = Courier(auth_token=COURIER_AUTH_TOKEN)
 
 app = Flask(__name__)
 Markdown(app)
@@ -79,6 +84,15 @@ def filter(filter_string):
     )
 
 
+@app.route("/email_submit", methods=["POST"])
+def email_submit():
+    email = request.form["email"]
+    success_image = client.asset("6WgPhLpPAKnzeArKWdWfzM")
+    return render_template(
+        "email_submitted.html", email=email, success_image=success_image
+    )
+
+
 # We only need this for local development.
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=FLASK_DEBUG)
