@@ -1,0 +1,58 @@
+{% extends "layout.html" %} {% block title %}{{title}}{% endblock %} {% block head %} {%
+endblock %} {% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <h1 class="title has-text-centered">Hi {{profile.profile.email}}.</h1>
+                <p class="summary has-text-centered">
+                    Update your Subscription information.
+                </p>
+                <div class="summary">
+                    <img src="{{success_image.url()}}" />
+
+                    <form id="update_form" method="POST">
+                        <input
+                            name="recipent_id"
+                            value="{{recipent_id}}"
+                            type="hidden"
+                        />
+
+                        <div class="field has-addons">
+                            <p class="control">
+                                <span class="select">
+                                    <select name="type">
+                                        <option value="everyone">All Heroes</option>
+                                        <option value="kamenrider">Kamen Rider</option>
+                                        <option value="supersentai">
+                                            Super Sentai
+                                        </option>
+                                        <option value="unsubscribe">Unsubscribe</option>
+                                    </select>
+                                </span>
+                            </p>
+                            <p class="control is-expanded">
+                                <input
+                                    class="input"
+                                    name="email"
+                                    type="email"
+                                    value="{{profile.profile.email}}"
+                                />
+                            </p>
+                            <p class="control">
+                                <a
+                                    class="button is-info"
+                                    href="javascript:{}"
+                                    onclick="document.getElementById('update_form').submit();"
+                                >
+                                    Update
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
