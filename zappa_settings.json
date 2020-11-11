@@ -6,7 +6,10 @@
         "environment_variables": {
             "SPACE_ID": "mt0pmhki5db7",
             "DELIVERY_API_KEY": "8c7dbd270cb98e83f9d8d57fb8a2ab7bac9d7501905fb013c69995ebf1b2a719",
-            "API_URL": "cdn.contentful.com"
+            "API_URL": "cdn.contentful.com",
+            "COURIER_AUTH_TOKEN" : "Get your own token for this one",
+            "FLASK_DEBUG" : "false",
+            "ENV" : "master"
         }
     },
     "production": {
@@ -16,7 +19,10 @@
         "environment_variables": {
             "SPACE_ID": "mt0pmhki5db7",
             "DELIVERY_API_KEY": "322a983a5b98f0d06013645ae219a28d184077617cd58d2dc030f28dba46317a",
-            "API_URL": "preview.contentful.com"
+            "API_URL": "preview.contentful.com",
+            "COURIER_AUTH_TOKEN" : "Get your own token for this one",
+            "FLASK_DEBUG" : "false",
+            "ENV" : "master"
         }
     }
 }

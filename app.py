@@ -96,7 +96,12 @@ def email_submit():
     else:
         list_id = f"henshin.blog.{sub_type}"
     courier_client.lists.subscribe(list_id, recipent_id)
-    success_image = client.asset("6WgPhLpPAKnzeArKWdWfzM")
+    success_image_dict = {
+        "supersentai": "6WgPhLpPAKnzeArKWdWfzM",
+        "kamenrider": "WyrLWLKenunEYA3LZCWzr",
+        "everyone": "3Rf1fY2nF9yzvXvRcjkAgf",
+    }
+    success_image = client.asset(success_image_dict[sub_type])
     return render_template(
         "email_submitted.html",
         email=email,
