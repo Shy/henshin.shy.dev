@@ -1,52 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Required meta tags -->
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <title>{% block title %}{% endblock %}</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}"/>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.css') }}"/>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
-        {% block head %}
-        {% endblock %}
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/bulma.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/main.css') }}"
+        />
+        {% block head %} {% endblock %}
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36164310-3"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-36164310-3"
+        ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-            gtag('config', 'UA-36164310-3');
+            gtag("config", "UA-36164310-3");
         </script>
     </head>
     <body>
-        <a href="https://github.com/contentful-labs/zappa-contentful"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+        <a href="https://github.com/contentful-labs/zappa-contentful"
+            ><img
+                style="position: absolute; top: 0; right: 0; border: 0"
+                src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+                alt="Fork me on GitHub"
+        /></a>
         <nav class="navbar is-transparent">
             <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="{{url_for('index')}}"> Home </a>
+                    <a
+                        class="navbar-item"
+                        href="{{url_for('filter',filter_string='SuperSentai')}}"
+                    >
+                        Super Sentai
+                    </a>
+                    <a
+                        class="navbar-item"
+                        href="{{url_for('filter',filter_string='KamenRider')}}"
+                    >
+                        Kamen Rider
+                    </a>
+                </div>
                 <div class="navbar-end">
-                    <a class="navbar-item" href="{{url_for('index')}}">
-                    Home
-                    </a>
-                    <a class="navbar-item" href="{{url_for('filter',filter_string='SuperSentai')}}">
-                    Super Sentai
-                    </a>
-                    <a class="navbar-item" href="{{url_for('filter',filter_string='KamenRider')}}">
-                    Kamen Rider
-                    </a>
+                    <form
+                        id="subscribe_form"
+                        method="POST"
+                        action="{{ url_for('email_submit') }}"
+                    >
+                        <div class="field has-addons">
+                            <p class="control">
+                                <span class="select">
+                                    <select name="type">
+                                        <option value="everyone">All Heroes</option>
+                                        <option value="kamenrider">Kamen Rider</option>
+                                        <option value="supersentai">
+                                            Super Sentai
+                                        </option>
+                                    </select>
+                                </span>
+                            </p>
+                            <p class="control">
+                                <input
+                                    class="input"
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email Address"
+                                />
+                            </p>
+                            <p class="control">
+                                <a
+                                    class="button is-info"
+                                    href="javascript:{}"
+                                    onclick="document.getElementById('subscribe_form').submit();"
+                                >
+                                    Subscribe
+                                </a>
+                            </p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </nav>
-        {% block content %}
-        {% endblock %}
+        {% block content %} {% endblock %}
         <footer class="footer">
             <div class="container">
                 <div class="content has-text-centered">
-                {% block footer %}
-                {% endblock %}
-                <a href="https://www.contentful.com/" rel="nofollow" target=“_blank”><img src="https://images.contentful.com/fo9twyrwpveg/44baP9Gtm8qE2Umm8CQwQk/c43325463d1cb5db2ef97fca0788ea55/PoweredByContentful_LightBackground.svg" style="max-width:100px;width:100%;" alt="Powered by Contentful" /></a>
+                    {% block footer %} {% endblock %}
+                    <a
+                        href="https://www.contentful.com/"
+                        rel="nofollow"
+                        target="“_blank”"
+                        ><img
+                            src="https://images.contentful.com/fo9twyrwpveg/44baP9Gtm8qE2Umm8CQwQk/c43325463d1cb5db2ef97fca0788ea55/PoweredByContentful_LightBackground.svg"
+                            style="max-width: 100px; width: 100%"
+                            alt="Powered by Contentful"
+                    /></a>
                 </div>
             </div>
         </footer>
     </body>
 </html>
-
